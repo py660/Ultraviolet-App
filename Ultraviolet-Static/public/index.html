@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>SATCOM | Global Web Services</title>
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#434c5e"
+    />
+    <meta name="googlebot" content="index, follow, snippet" />
+    <link rel="shortcut icon" content="favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is SATCOM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "██████████████████████████ Redacted."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <div
+      title="SATCOM Logo"
+      class="flex-center logo-wrapper header-center"
+    >
+        <!--img class="logo" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-icon-logo-png-transparent-svg-vector-bie-supply-14.png" alt="SATCOM" /-->
+        <img class="logo" src="https://www.nato.int/nato_static_fl2014/assets/pictures/images_mfu/2021/4/stock/210423-satcom.jpg" alt="SATCOM" />
+      <!--img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp2hsmrFkN1xxnHxhiatSeJ9mqq4E-YL7VYASapNHhmg&s" alt="SATCOM" /-->
+      <h1>SATCOM | CLDFLR</h1>
+    </div>
+    <div class="flex-center desc">
+      <p>
+        SATCOM is a internet company that focuses on global computing services.
+      </p>
+    </div>
+
+    <form id="uv-form" class="flex-center">
+      <input
+        id="uv-search-engine"
+        value="https://www.google.com/search?q=%s"
+        type="hidden"
+      />
+      <input id="uv-address" type="text" placeholder="Search the web freely" />
+    </form>
+    <div class="desc left-margin">
+      <p id="uv-error"></p>
+      <pre id="uv-error-code"></pre>
+    </div>
+    
+  </body>
+</html>

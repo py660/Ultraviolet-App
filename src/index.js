@@ -5,6 +5,10 @@ import { publicPath } from "ultraviolet-static";
 import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
 import { join } from "node:path";
 import { hostname } from "node:os";
+const fs = require('@cyclic.sh/s3fs')(process.env.S3_BUCKET_NAME)
+//const json = JSON.parse(fs.readFileSync('test/_read.json'))
+
+console.log(fs)
 
 const bare = createBareServer("/bare/");
 const app = express();

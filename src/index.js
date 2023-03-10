@@ -5,8 +5,8 @@ import { publicPath } from "ultraviolet-static";
 import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
 import { join } from "node:path";
 import { hostname } from "node:os";
-const fs = require('@cyclic.sh/s3fs')(process.env.S3_BUCKET_NAME)
-//const json = JSON.parse(fs.readFileSync('test/_read.json'))
+import pkg from '@cyclic.sh/s3fs';
+const fs = pkg(process.env.S3_BUCKET_NAME);
 
 console.log(fs)
 

@@ -6,7 +6,7 @@ import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
 import { join } from "node:path";
 import { hostname } from "node:os";
 import pkg from '@cyclic.sh/s3fs';
-const fs = pkg(process.env.S3_BUCKET_NAME);
+const fs = pkg;
 
 console.log(fs)
 
